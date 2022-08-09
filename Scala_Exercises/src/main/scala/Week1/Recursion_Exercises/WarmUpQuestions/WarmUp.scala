@@ -13,30 +13,25 @@ import scala.annotation.tailrec
 
 class WarmUp {
 
-  // Recursive
-
-  def concatenateStringNTimes(s:String,n:Int):String = {
-    if (n==0 || n==1) s
-    else s+concatenateStringNTimes(s,n-1)
+  // Standard Recursive
+  // TODO: Write isPrime for Standard Recursive
+  def concatenateStringNTimes(inputString:String,n:Int):String = {
+    if (n==0 || n==1) inputString
+    else inputString+concatenateStringNTimes(inputString,n-1)
   }
-  def fibonacciNum(n:Int):Int = {
-    if (n == 1 || n == 2) 1
-    else fibonacciNum(n-1)+fibonacciNum(n-2)
+  def fibonacciNum(number:Int):Int = {
+    if (number == 1 || number == 2) 1
+    else fibonacciNum(number-1)+fibonacciNum(number-2)
   }
-  def findLength(s:String):Int = {
-    def helperFunc(a:String,acc:Int=1):Int={
-      if (a=="") acc-1
-      else acc+helperFunc(a.substring(1))
-    }
-    helperFunc(s)
+  def findLength(inputString:String,acc:Int=1):Int = {
+    if (inputString=="") acc-1
+    else acc+findLength(inputString.substring(1))
   }
   def returnSum(a:Int,b:Int):Int = {
     if ((a+1)==b) 0
     else a+1+returnSum(a+1,b)
   }
 
-  // TODO: Write isPrime for non-tail recursive
-  // TODO: Write fibonacciNum for tail recursive
 
 
   // Tail Recursive
@@ -61,12 +56,10 @@ class WarmUp {
     if (s=="") acc-1
     else findLengthTR(s.substring(1),acc+1)
   }
-
-  // TODO:Re-Write tail rec of fibonacci
-//  def fibonacciNumTR(n:Int,acc:Int=1):Int = {
-//    if (n == 1 || n == 2) acc
-//    else fibonacciNumTR(n-2,acc+fibonacciNumTR(n-1))
-//  }
+  def fibonacciNumTR(n:Int,acc:Int=1):Int = {
+    if (n == 1 || n == 2) acc
+    else fibonacciNumTR(n-2,acc+(n-1))
+  }
 
 
 

@@ -52,15 +52,15 @@ class WarmUpQuestionsSuite extends FunSuite {
     assertEquals(obtained, expected)
   }
 
-//  test("Should return a fibonacci number for a provided value n using tail recursion") {
-//    val obtainedTR = warmUpQuestions.fibonacciNumTR(7)
-//    val expected = 13
-//    assertEquals(obtainedTR, expected)
-//  }
+  test("Should return a fibonacci number for a provided value n using tail recursion") {
+    val obtainedTR = warmUpQuestions.fibonacciNumTR(7)
+    val expected = 13
+    assertEquals(obtainedTR, expected)
+  }
 
 
 //  test("Should return whether a given number n is prime") {
-//    val obtained = warmUpQuestions.isPrimeTR(7)
+//    val obtained = warmUpQuestions.isPrime(7)
 //    val expected = true
 //    assertEquals(obtained, expected)
 //  }
