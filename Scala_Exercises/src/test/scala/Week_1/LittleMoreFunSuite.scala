@@ -1,3 +1,5 @@
+package Week_1
+
 import Week1.Recursion_Exercises.LittleMoreFun.LittleMoreFun
 import munit.FunSuite
 
