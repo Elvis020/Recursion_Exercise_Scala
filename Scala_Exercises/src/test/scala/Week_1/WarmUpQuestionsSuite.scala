@@ -1,6 +1,6 @@
 package Week_1
 
-import Week1.Recursion_Exercises.WarmUpQuestions.WarmUp
+import Week1.Recursion_Exercises.ChallengeQuestion_1.WarmUp
 import munit.FunSuite
 
 

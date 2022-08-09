@@ -1,4 +1,4 @@
-package Week1.Recursion_Exercises.WarmUpQuestions
+package Week1.Recursion_Exercises.ChallengeQuestion_1
 
 import scala.annotation.tailrec
 
@@ -14,7 +14,6 @@ import scala.annotation.tailrec
 class WarmUp {
 
   // Standard Recursive
-  // TODO: Write isPrime for Standard Recursive
   def concatenateStringNTimes(inputString:String,n:Int):String = {
     if (n==0 || n==1) inputString
     else inputString+concatenateStringNTimes(inputString,n-1)
@@ -23,9 +22,13 @@ class WarmUp {
     if (number == 1 || number == 2) 1
     else fibonacciNum(number-1)+fibonacciNum(number-2)
   }
-  def findLength(inputString:String,acc:Int=1):Int = {
-    if (inputString=="") acc-1
-    else acc+findLength(inputString.substring(1))
+  def findLength(inputString:String):Int = {
+    def helperFun(s:String,acc:Int=1):Int = {
+      if (s=="") acc-1
+      else acc+findLength(s.substring(1))
+    }
+    helperFun(inputString)
+
   }
   def returnSum(a:Int,b:Int):Int = {
     if ((a+1)==b) 0
@@ -43,23 +46,39 @@ class WarmUp {
     }
     helperFun(s,n)
   }
-  def isPrimeTR(n:Int,acc:Int=2):Boolean = {
-    if (n==acc) true
-    else if (n%acc == 0) false
-    else isPrimeTR(n,acc+1)
+  def isPrimeTR(n:Int):Boolean = {
+    @tailrec
+    def helperFunc(a:Int,acc:Int=2):Boolean={
+      if (n==acc) true
+      else if (n%acc == 0) false
+      else helperFunc(a,acc+1)
+    }
+    helperFunc(n)
   }
-  def returnSumTR(a:Int,b:Int,acc:Int=0):Int = {
-    if ((a+1)==b) acc
-    else returnSumTR(a+1,b,acc+a+1)
+  def returnSumTR(a:Int,b:Int):Int = {
+    @tailrec
+    def helperFunc(c:Int,d:Int,acc:Int=0):Int = {
+      if ((c+1)==d) acc
+      else helperFunc(c+1,d,acc+c+1)
+    }
+    helperFunc(a,b)
   }
-  def findLengthTR(s:String,acc:Int=1):Int = {
-    if (s=="") acc-1
-    else findLengthTR(s.substring(1),acc+1)
-  }
+  def findLengthTR(s:String):Int = {
+    @tailrec
+    def helperFun(n:String,acc:Int=1):Int = {
+      if (n=="") acc-1
+      else helperFun(n.substring(1),acc+1)
+    }
+    helperFun(s)
 
-  def fibonacciNumTR(n:Int,acc1:Int=0,acc2:Int=1):Int = {
-    if (n == 1 || n == 2) acc1+acc2
-    else fibonacciNumTR(n-1,acc2,acc1+acc2)
+  }
+  def fibonacciNumTR(n:Int):Int = {
+    @tailrec
+    def helperFunc(a:Int,acc1:Int=0,acc2:Int=1):Int = {
+      if (a == 1 || a == 2) acc1+acc2
+      else helperFunc(a-1,acc2,acc1+acc2)
+    }
+    helperFunc(n)
   }
 
 
