@@ -6,11 +6,34 @@ import scala.collection.mutable
 class LittleMoreFunSuite extends FunSuite {
   val littleMoreFun = new LittleMoreFun()
 
-//  test("Should the return false the given parenthesis ") {
-//    val obtained = littleMoreFun.hasValidParenthesis("")
-//    val expected = false
-//    assertEquals(obtained, expected)
-//  }
+  test("Should return true when given () ") {
+    val obtained = littleMoreFun.hasValidParenthesis("()")
+    val expected = true
+    assertEquals(obtained, expected)
+  }
+
+  test("Should return true when given ((())) ") {
+    val obtained = littleMoreFun.hasValidParenthesis("((()))")
+    val expected = true
+    assertEquals(obtained, expected)
+  }
+  test("Should return true when given (())()()(())((())) ") {
+    val obtained = littleMoreFun.hasValidParenthesis("(())()()(())((()))")
+    val expected = true
+    assertEquals(obtained, expected)
+  }
+
+  test("Should return false when given (() ") {
+    val obtained = littleMoreFun.hasValidParenthesis("(()")
+    val expected = false
+    assertEquals(obtained, expected)
+  }
+
+  test("Should return false when given )( ") {
+    val obtained = littleMoreFun.hasValidParenthesis(")(")
+    val expected = false
+    assertEquals(obtained, expected)
+  }
 
 
   test("Should count the characters in a string using tail recursion") {

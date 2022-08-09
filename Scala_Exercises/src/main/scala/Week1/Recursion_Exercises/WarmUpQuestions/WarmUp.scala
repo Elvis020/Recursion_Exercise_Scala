@@ -35,8 +35,8 @@ class WarmUp {
     else a+1+returnSum(a+1,b)
   }
 
-  // TODO: Write isPrime for non-recursive
-  // TODO: Write fibonacciNum for recursive
+  // TODO: Write isPrime for non-tail recursive
+  // TODO: Write fibonacciNum for tail recursive
 
 
   // Tail Recursive
@@ -62,7 +62,7 @@ class WarmUp {
     else findLengthTR(s.substring(1),acc+1)
   }
 
-  // TODO:Write tail rec of fibonacci
+  // TODO:Re-Write tail rec of fibonacci
 //  def fibonacciNumTR(n:Int,acc:Int=1):Int = {
 //    if (n == 1 || n == 2) acc
 //    else fibonacciNumTR(n-2,acc+fibonacciNumTR(n-1))

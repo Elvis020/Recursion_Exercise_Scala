@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/elvis/Scala_Training/Scala_Exercises/Scala_Exercises/target/scala-2.13/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.13' for Scala 2.13.8. Compiling...[0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 6.388s.[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /home/elvis/Scala_Training/Scala_Exercises/Scala_Exercises/target/scala-2.13/test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 9, Failed 0, Errors 0, Passed 9[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 12 s, completed Aug 9, 2022, 11:50:25 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m
