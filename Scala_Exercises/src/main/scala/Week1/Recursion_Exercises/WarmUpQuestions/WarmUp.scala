@@ -56,9 +56,10 @@ class WarmUp {
     if (s=="") acc-1
     else findLengthTR(s.substring(1),acc+1)
   }
-  def fibonacciNumTR(n:Int,acc:Int=1):Int = {
-    if (n == 1 || n == 2) acc
-    else fibonacciNumTR(n-2,acc+(n-1))
+
+  def fibonacciNumTR(n:Int,acc1:Int=0,acc2:Int=1):Int = {
+    if (n == 1 || n == 2) acc1+acc2
+    else fibonacciNumTR(n-1,acc2,acc1+acc2)
   }
 
 

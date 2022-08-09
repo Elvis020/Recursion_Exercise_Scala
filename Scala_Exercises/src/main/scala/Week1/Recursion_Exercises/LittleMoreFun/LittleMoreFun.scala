@@ -5,6 +5,16 @@ import scala.annotation.tailrec
 import scala.collection.mutable
 
 class LittleMoreFun {
+  // Without recursion
+  def countCharacters(s: String):mutable.Map[Char,Int] = {
+    val emptyMap = scala.collection.mutable.Map[Char,Int]()
+    s.map(c =>{
+      emptyMap += ((c ,s.count(_ == c)))
+    })
+    emptyMap
+  }
+
+
 
   // With tail recursion
   def countCharactersRT(s:String):mutable.Map[Char,Int] = {
@@ -22,7 +32,6 @@ class LittleMoreFun {
     helperFunc(s)
   }
   def hasValidParenthesis(s:String): Boolean = {
-    @tailrec
     def helperFun(a:String,d:mutable.Stack[String]=mutable.Stack.empty):Boolean ={
       if ((a == "") || (a.head.toString ==")") && d.isEmpty) a == "" && d.isEmpty
       else{

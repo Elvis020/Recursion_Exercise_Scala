@@ -46,15 +46,15 @@ class WarmUpQuestionsSuite extends FunSuite {
   }
 
   test("Should return a fibonacci number for a provided value n") {
-    val obtained = warmUpQuestions.fibonacciNum(7)
-    val expected = 13
+    val obtained = warmUpQuestions.fibonacciNum(10)
+    val expected = 55
 
     assertEquals(obtained, expected)
   }
 
   test("Should return a fibonacci number for a provided value n using tail recursion") {
-    val obtainedTR = warmUpQuestions.fibonacciNumTR(7)
-    val expected = 13
+    val obtainedTR = warmUpQuestions.fibonacciNumTR(10)
+    val expected = 55
     assertEquals(obtainedTR, expected)
   }
 
