@@ -36,10 +36,10 @@ class LittleMoreFunSuite extends FunSuite {
   }
 
 
-//  test("Should count the characters in a string using tail recursion") {
-//    val obtained = littleMoreFun.countCharactersRT("hello")
-//    val expected = mutable.HashMap('e' -> 1, 'h' -> 1, 'l' -> 2, 'o' -> 1)
-//    assertEquals(obtained, expected)
-//  }
+  test("Should count the characters in a string using tail recursion") {
+    val obtained = littleMoreFun.countCharactersRT("hello")
+    val expected = Map('h' -> 1, 'e' -> 1, 'l' -> 2, 'o' -> 1)
+    assertEquals(obtained, expected)
+  }
 
 }
