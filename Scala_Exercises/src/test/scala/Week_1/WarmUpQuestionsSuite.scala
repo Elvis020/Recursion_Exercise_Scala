@@ -1,6 +1,6 @@
 package Week_1
 
-import Week1.Recursion_Exercises.ChallengeQuestion_1.WarmUp
+import Week1.Part_I.Recursion_Exercises.WarmUp
 import munit.FunSuite
 
 
@@ -57,13 +57,6 @@ class WarmUpQuestionsSuite extends FunSuite {
     val expected = 55
     assertEquals(obtainedTR, expected)
   }
-
-
-//  test("Should return whether a given number n is prime") {
-//    val obtained = warmUpQuestions.isPrime(7)
-//    val expected = true
-//    assertEquals(obtained, expected)
-//  }
 
 
   test("Should return whether a given number n is prime using tail recursion") {

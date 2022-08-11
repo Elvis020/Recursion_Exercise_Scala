@@ -1,4 +1,4 @@
-package Week1.Recursion_Exercises.ChallengeQuestion_1
+package Week1.Part_I.Recursion_Exercises
 
 import scala.annotation.tailrec
 
@@ -32,7 +32,7 @@ class LittleMoreFun {
       if (a == "") myMap
       else {
         if (myMap.contains(a.head)) {
-          helperFunc(a.tail, myMap(a.head), myMap + ((a.head, myMap(a.head)+1)))
+          helperFunc(a.tail, count, myMap + ((a.head, myMap(a.head)+1)))
         }
         else{
           helperFunc(a.tail, count, myMap + (a.head -> count))

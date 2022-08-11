@@ -1,6 +1,6 @@
 package Week_1
 
-import Week1.Recursion_Exercises.ChallengeQuestion_1.LittleMoreFun
+import Week1.Part_I.Recursion_Exercises.LittleMoreFun
 import munit.FunSuite
 
 class LittleMoreFunSuite extends FunSuite {
@@ -39,6 +39,12 @@ class LittleMoreFunSuite extends FunSuite {
   test("Should count the characters in a string using tail recursion") {
     val obtained = littleMoreFun.countCharactersRT("hello")
     val expected = Map('h' -> 1, 'e' -> 1, 'l' -> 2, 'o' -> 1)
+    assertEquals(obtained, expected)
+  }
+
+  test("Should count the characters in a string using tail recursion") {
+    val obtained = littleMoreFun.countCharactersRT("None of my buisness")
+    val expected = Map('e' -> 2, 's' -> 3, 'n' -> 2, 'N' -> 1, 'y' -> 1, 'm' -> 1, 'i' -> 1, ' ' -> 3, 'b' -> 1, 'o' -> 2, 'u' -> 1, 'f' -> 1)
     assertEquals(obtained, expected)
   }
 
