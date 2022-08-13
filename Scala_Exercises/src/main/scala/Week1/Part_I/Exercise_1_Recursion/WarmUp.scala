@@ -1,4 +1,4 @@
-package Week1.Part_I.Recursion_Exercises
+package Week1.Part_I.Exercise_1_Recursion
 
 import scala.annotation.tailrec
 

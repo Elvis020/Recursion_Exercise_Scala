@@ -1,6 +1,6 @@
 package Week_1
 
-import Week1.Part_I.Recursion_Exercises.LittleMoreFun
+import Week1.Part_I.Exercise_1_Recursion.LittleMoreFun
 import munit.FunSuite
 
 class LittleMoreFunSuite extends FunSuite {
