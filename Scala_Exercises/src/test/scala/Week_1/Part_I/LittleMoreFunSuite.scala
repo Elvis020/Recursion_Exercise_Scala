@@ -1,10 +1,10 @@
-package Week_1
+package Week_1.Part_I
 
 import Week1.Part_I.Exercise_1_Recursion.LittleMoreFun
 import munit.FunSuite
 
 class LittleMoreFunSuite extends FunSuite {
-  val littleMoreFun = new LittleMoreFun()
+  val littleMoreFun = LittleMoreFun
 
   test("Should return true when given () using tail recursion") {
     val obtained = littleMoreFun.hasValidParenthesis("()")

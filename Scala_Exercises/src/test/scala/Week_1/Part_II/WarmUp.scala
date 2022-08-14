@@ -1,11 +1,11 @@
-package Week_2
+package Week_1.Part_II
 
 import Week1.Part_II.Exercise_2_Functions.WarmUpII
 import munit.FunSuite
 
 
 class WarmUpFunSuite extends FunSuite {
-  val warmUp = new WarmUpII()
+  val warmUp = WarmUpII
 
   test("Should return the sum of 15 when given (1,2,3,4,5)") {
     val obtained = warmUp.take5AndAdd_I(1,2,3,4,5)

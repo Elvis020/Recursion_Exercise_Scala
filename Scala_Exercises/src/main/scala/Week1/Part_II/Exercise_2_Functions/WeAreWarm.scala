@@ -16,16 +16,22 @@ object FileMatcher{
   def filesRegex(query:String):Array[File] = filesHere.filter(x => new Regex(x.toString).matches(query))
 
 
-  // Refactoring with filesMatching
+  // Refactoring with filesMatching function
   def filesMatching(exampleQuery:String,fn:(String,String) => Boolean):Array[File] = filesHere.filter(x => fn(exampleQuery,x.toString))
 
   def filesEndingII(query:String):Array[File] = filesMatching(query, (query,x) => x.endsWith(query))
   def filesContainingII(query:String):Array[File] = filesMatching(query, (query,x) => x.contains(query))
   def filesRegexII(query:String):Array[File] = filesMatching(query, (query,x) => new Regex(x).matches(query))
 
-  def toString(arrOfFiles:Array[File]): String = arrOfFiles.mkString("[",",","]")
 
-  // TODO: Work on additional implementation and convert to curried function
+  // A different function of my own
+  def filesStarting(query:String):Array[File] = filesMatching(query, (query,x) => x.startsWith(query))
+  def filesStartingWithCurried(query:String):Array[File] = filesMatchingII(query)((query,x) => x.startsWith(query))
+
+  // Using Currying for the filesMatching
+  def filesMatchingII(exampleQuery:String)(fn:(String,String) => Boolean):Array[File] = filesHere.filter(x => fn(exampleQuery,x.toString))
+
+  def toString(arrOfFiles:Array[File]): String = arrOfFiles.mkString("[",",","]")
 
 
 }

@@ -3,7 +3,7 @@ package Week1.Part_I.Exercise_1_Recursion
 import scala.annotation.tailrec
 
 
-class LittleMoreFun {
+object LittleMoreFun {
 
   // With tail recursion
   def hasValidParenthesis(string: String): Boolean = {

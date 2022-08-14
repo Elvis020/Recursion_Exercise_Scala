@@ -11,7 +11,7 @@ import scala.annotation.tailrec
  * 5. Returns whether a given number n is prime (i.e. it is divisible by itself and 1)
  */
 
-class WarmUp {
+object WarmUp {
 
   // Standard Recursive
   def concatenateStringNTimes(inputString:String,n:Int):String = {

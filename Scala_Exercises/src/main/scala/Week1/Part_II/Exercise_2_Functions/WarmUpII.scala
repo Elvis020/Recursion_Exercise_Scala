@@ -2,18 +2,10 @@ package Week1.Part_II.Exercise_2_Functions
 
 import scala.annotation.tailrec
 
-/**
- * 1. Write a function value that takes five strings and returns the sum of the length of all
- * of the strings. Write this function using both long hand syntax (e.g. FunctionX) and
- * short hand. Which do you prefer and why?
- *
- * 2. Write a function that takes an int as an argument and returns another function as a result
- *
- * 3.
- */
 
 
-class WarmUpII {
+
+object WarmUpII {
 
   // Question 1 (I prefer take5AndAdd_I)
   val take5AndAdd_I = new Function5[Int, Int, Int, Int, Int, Int] {
@@ -25,15 +17,29 @@ class WarmUpII {
   val add2ToReturnFunctionValue: Int => (Int => Int) = x => n => n + 2 + x
 
   // TODO: Question 3
-  //  val function: (String, (Int, (String => Int)) => Int) => (Int => Int) = ???
-  //  val takeIntAndReturnFunctionValue:Int => (Int => Int) = x => n => n+2+x
-  //  val convertStrTInt: String => Int = s => s.toInt
-  //  val addTwoNums: (Int, String => Int) => Int = (x:Int, y:String => Int) => x + (y _)
-  //  val takeSandII: (String, (Int,(String => Int)) => Int) => Int = ???
-  //  val takeStringAndComplexFun: (String, (Int,(String => Int)) => Int) =>(Int=>Int) = (x:String) => (y:Int,z:String=>Int)  => y+z(x)
-  //  val takeStringAndComplexFun: (String, (Int,(String => Int)) => Int) =
-  //    (x:String,y:(Int,(String => Int)) => Int) = (y => )
-  //  val e1: (Int, String => Int) = (21,convertStrTInt)
+//  val function: (String, (Int, (String => Int)) => Int) => (Int => Int) = ???
+  val takeStringAndConvertToInt: String => Int = (x:String) => x.toInt
+  val take2Nums: (Int, String => Int) => Int = (num1:Int, takeStringAndConvertToInt) => num1 + takeStringAndConvertToInt("2")
+//  val level_4:(String, (Int, (String => Int)) => Int) => (Int => Int) = {
+//    case (x:String, y:((Int, (String => Int)) => Int)) => y match {
+//      case (s:Int,r:(String =>Int)) => r match {
+//        case
+//      }
+//    }
+//  }
+
+//  val level_1: String => Int = takeStringAndConvertToInt
+//  val level_2 = take2Nums(21,takeStringAndConvertToInt)
+//  val level_3 = level_4("5",take2Nums)
+//
+//  println(level_3)
+
+
+
+
+
+
+
 
   // Question 4
   val addThreeNumbers = (x: Int, y: Int, z: Int) => x + y + z

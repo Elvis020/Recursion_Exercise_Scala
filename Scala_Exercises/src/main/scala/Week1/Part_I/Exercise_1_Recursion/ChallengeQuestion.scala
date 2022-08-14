@@ -1,6 +1,6 @@
 package Week1.Part_I.Exercise_1_Recursion
 
-class ChallengeQuestion {
+object ChallengeQuestion {
   def generateValidParentheses(sampleLength:Int):Unit = {
 
     // TODO: To figure out the logic for this function

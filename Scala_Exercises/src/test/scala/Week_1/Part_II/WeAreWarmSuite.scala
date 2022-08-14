@@ -1,7 +1,6 @@
-package Week_2
+package Week_1.Part_II
 
 import Week1.Part_II.Exercise_2_Functions.FileMatcher
-import Week1.Part_II.Exercise_2_Functions.Testy.e
 import munit.FunSuite
 
 class WeAreWarmSuite extends FunSuite {
@@ -48,6 +47,12 @@ class WeAreWarmSuite extends FunSuite {
     val extract = fileMatcher.filesRegexII("./.bsp")
     val obtained = fileMatcher.toString(extract)
     val expected = "[./.bsp]"
+    assertEquals(obtained,expected)
+  }
+  test("Should return all the files with regex './.bsp' using implementation II") {
+    val extract = fileMatcher.filesStartingWithCurried("./.")
+    val obtained = fileMatcher.toString(extract)
+    val expected = "[./.idea,./.bsp]"
     assertEquals(obtained,expected)
   }
 

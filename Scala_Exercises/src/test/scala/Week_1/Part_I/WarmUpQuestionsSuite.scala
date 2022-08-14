@@ -1,4 +1,4 @@
-package Week_1
+package Week_1.Part_I
 
 import Week1.Part_I.Exercise_1_Recursion.WarmUp
 import munit.FunSuite
@@ -6,7 +6,7 @@ import munit.FunSuite
 
 
 class WarmUpQuestionsSuite extends FunSuite {
-  val warmUpQuestions = new WarmUp()
+  val warmUpQuestions = WarmUp
 
   test("Should the sum of the numbers between two numbers 2 and 10") {
     val obtained = warmUpQuestions.returnSum(2,10)
