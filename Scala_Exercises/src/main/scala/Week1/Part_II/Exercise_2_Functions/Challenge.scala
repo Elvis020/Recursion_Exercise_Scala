@@ -33,12 +33,12 @@ object Challenge {
   }
 
 
-  def intSort(listOfInts:List[Int],fn:(Int,Int) => Boolean = _<= _ ): List[Int] = {
-    mergeSort(fn)(listOfInts)
+  def intSort(listOfInts:List[Int]): List[Int] = {
+    mergeSort( (_:Int) <= (_:Int) )(listOfInts)
   }
 
-  def reverseSort(listOfInts:List[Int],fn:(Int,Int) => Boolean = _ >= _ ): List[Int] = {
-    mergeSort(fn)(listOfInts)
+  def reverseSort(listOfInts:List[Int]): List[Int] = {
+    mergeSort((_:Int) >= (_:Int))(listOfInts)
   }
 
   // Yh, making it curry makes it definitely easier to read and write. I have seen the significant difference the currying makes

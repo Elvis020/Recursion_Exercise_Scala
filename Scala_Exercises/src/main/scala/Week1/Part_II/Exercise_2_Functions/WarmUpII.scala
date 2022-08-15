@@ -17,28 +17,22 @@ object WarmUpII {
   val add2ToReturnFunctionValue: Int => (Int => Int) = x => n => n + 2 + x
 
   // TODO: Question 3
-//  val function: (String, (Int, (String => Int)) => Int) => (Int => Int) = ???
-  val takeStringAndConvertToInt: String => Int = (x:String) => x.toInt
-  val take2Nums: (Int, String => Int) => Int = (num1:Int, takeStringAndConvertToInt) => num1 + takeStringAndConvertToInt("2")
-//  val level_4:(String, (Int, (String => Int)) => Int) => (Int => Int) = {
-//    case (x:String, y:((Int, (String => Int)) => Int)) => y match {
-//      case (s:Int,r:(String =>Int)) => r match {
-//        case
-//      }
-//    }
-//  }
+  //  val function: (String, (Int, (String => Int)) => Int) => (Int => Int) = ???
+  val takeStringAndConvertToInt: String => Int = (x: String) => x.toInt
+  val take2Nums: (Int, String => Int) => Int = (num1: Int, takeStringAndConvertToInt) => num1 + takeStringAndConvertToInt("2")
+  //  val level_4:(String, (Int, (String => Int)) => Int) => (Int => Int) = {
+  //    case (x:String, y:((Int, (String => Int)) => Int)) => y match {
+  //      case (s:Int,r:(String =>Int)) => r match {
+  //        case
+  //      }
+  //    }
+  //  }
 
-//  val level_1: String => Int = takeStringAndConvertToInt
-//  val level_2 = take2Nums(21,takeStringAndConvertToInt)
-//  val level_3 = level_4("5",take2Nums)
-//
-//  println(level_3)
-
-
-
-
-
-
+  //  val level_1: String => Int = takeStringAndConvertToInt
+  //  val level_2 = take2Nums(21,takeStringAndConvertToInt)
+  //  val level_3 = level_4("5",take2Nums)
+  //
+  //  println(level_3)
 
 
   // Question 4
@@ -49,10 +43,4 @@ object WarmUpII {
 
   // Method 2 of converting to curried
   def addThreeNumbers_IIb(x: Int)(y: Int)(z: Int): Int = x + y + z
-
-
-  // TODO: Question 5 - Ask Nunana for clarification
-  def concatenate[T](item: T, item2: T, concat: T => T): T = ???
-
-
 }
