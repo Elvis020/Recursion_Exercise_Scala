@@ -1,15 +1,21 @@
 package Week1.Part_I.Exercise_1_Recursion
 
-object ChallengeQuestion {
-  def generateValidParentheses(sampleLength:Int):Unit = {
-
-    // TODO: To figure out the logic for this function
-    def helperFunc(n:Int,result:List[String]=List("()")): List[String] = {
-      if (sampleLength == 1) result
-      else {
-        helperFunc(n-1,result ++: List("()"))
+object Challenge {
+  def generateValidParentheses(sampleLength:Int):List[String] = {
+    def helperFunc(n:Int,currentStrings:Set[String]): Set[String] = {
+      if (n == 0) currentStrings
+      else  {
+        val nextResult = for {
+          string <- currentStrings
+          index <- 0 until string.length
+        } yield{
+          val (before,after) = string.splitAt(index)
+          s"$before()$after"
+        }
+        helperFunc(n-1,nextResult)
       }
     }
-    helperFunc(sampleLength)
+    if (sampleLength == 0) List()
+    else helperFunc(sampleLength-1,Set("()")).toList
   }
 }

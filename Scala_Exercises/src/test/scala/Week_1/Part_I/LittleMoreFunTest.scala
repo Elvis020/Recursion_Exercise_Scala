@@ -34,6 +34,13 @@ class LittleMoreFunTest extends FunSuite {
     val expected = false
     assertEquals(obtained, expected)
   }
+  test("Should return false when given ())()( using tail recursion") {
+    val obtained = littleMoreFun.hasValidParenthesis("())()(")
+    val expected = false
+    assertEquals(obtained, expected)
+  }
+
+
 
 
   test("Should count the characters in a string using tail recursion") {

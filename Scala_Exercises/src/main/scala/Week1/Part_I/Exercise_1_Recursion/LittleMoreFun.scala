@@ -10,6 +10,7 @@ object LittleMoreFun {
     @tailrec
     def helperFunc(helperString: String, count: Int = 0): Boolean = {
       if ((helperString == "") || (helperString.head == ')' && count == 0)) helperString == "" && count == 0
+
       else {
         if (helperString.head == '(') {
           helperFunc(helperString.tail, count + 1)
@@ -24,6 +25,7 @@ object LittleMoreFun {
     }
 
     helperFunc(string)
+
   }
 
   def countCharactersRT(s: String): Map[Char, Int] = {
