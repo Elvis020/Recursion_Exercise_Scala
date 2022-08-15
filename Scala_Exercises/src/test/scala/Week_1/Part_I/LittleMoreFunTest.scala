@@ -3,7 +3,7 @@ package Week_1.Part_I
 import Week1.Part_I.Exercise_1_Recursion.LittleMoreFun
 import munit.FunSuite
 
-class LittleMoreFunSuite extends FunSuite {
+class LittleMoreFunTest extends FunSuite {
   val littleMoreFun = LittleMoreFun
 
   test("Should return true when given () using tail recursion") {

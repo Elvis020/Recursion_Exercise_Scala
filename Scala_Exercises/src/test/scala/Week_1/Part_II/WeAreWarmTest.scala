@@ -3,7 +3,7 @@ package Week_1.Part_II
 import Week1.Part_II.Exercise_2_Functions.FileMatcher
 import munit.FunSuite
 
-class WeAreWarmSuite extends FunSuite {
+class WeAreWarmTest extends FunSuite {
   val fileMatcher = FileMatcher
 
   // List of files

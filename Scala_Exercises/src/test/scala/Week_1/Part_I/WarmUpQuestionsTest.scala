@@ -5,7 +5,7 @@ import munit.FunSuite
 
 
 
-class WarmUpQuestionsSuite extends FunSuite {
+class WarmUpQuestionsTest extends FunSuite {
   val warmUpQuestions = WarmUp
 
   test("Should the sum of the numbers between two numbers 2 and 10") {
