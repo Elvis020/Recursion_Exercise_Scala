@@ -12,6 +12,7 @@ object FileMatcher{
 
   // Initial implementation of code
   def filesEnding(query:String):Array[File] = filesHere.filter(_.toString.endsWith(query))
+
   def filesContaining(query:String):Array[File] = filesHere.filter(_.toString.contains(query))
   def filesRegex(query:String):Array[File] = filesHere.filter(x => new Regex(x.toString).matches(query))
 

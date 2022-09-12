@@ -1,0 +1,88 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.7.1 (Amazon.com Inc. Java 11.0.16.1)
+[debug] Load.defaultLoad until apply took 59.885798ms
+[debug]           Load.loadUnit: plugins took 56.642876ms
+[debug]           Load.loadUnit: defsScala took 0.262012ms
+[debug] [Loading] Scanning directory /home/elvis/Documents/Scala_Training/Scala_Exercises/Scala_Exercises/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/elvis/Documents/Scala_Training/Scala_Exercises/Scala_Exercises/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 14.085438 ms
+[debug]               Load.resolveProject(scala_exercises-build) took 37.699797ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id scala_exercises-build, base: /home/elvis/Documents/Scala_Training/Scala_Exercises/Scala_Exercises/project, plugins: List(<none>))) took 74.281127ms
+[debug] [Loading] Done in /home/elvis/Documents/Scala_Training/Scala_Exercises/Scala_Exercises/project, returning: (scala_exercises-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 88.230239ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.228068ms
+[debug]         Load.loadUnit(file:/home/elvis/Documents/Scala_Training/Scala_Exercises/Scala_Exercises/project/, ...) took 149.555868ms
+[debug]       Load.apply: load took 254.855942ms
+[debug]       Load.apply: resolveProjects took 5.314087ms
+[debug]       Load.apply: finalTransforms took 52.88594ms
+[debug]       Load.apply: config.delegates took 4.986262ms
+[debug]       Load.apply: Def.make(settings)... took 250.508648ms
+[debug]       Load.apply: structureIndex took 70.829062ms
+[debug]       Load.apply: mkStreams took 1.761394ms
+[info] loading project definition from /home/elvis/Documents/Scala_Training/Scala_Exercises/Scala_Exercises/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 2247.378178ms
+[debug]     Load.loadUnit: defsScala took 0.003407ms
+[debug] [Loading] Scanning directory /home/elvis/Documents/Scala_Training/Scala_Exercises/Scala_Exercises
+[debug]       Load.loadUnit: mkEval took 3.764992ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.205591 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 1.497128ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: /home/elvis/Documents/Scala_Training/Scala_Exercises/Scala_Exercises, plugins: List(<none>))) took 3.455722ms
+[debug] [Loading] Done in /home/elvis/Documents/Scala_Training/Scala_Exercises/Scala_Exercises, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 1918.424565ms
+[debug]     Load.loadUnit: cleanEvalClasses took 3.507058ms
+[debug]   Load.loadUnit(file:/home/elvis/Documents/Scala_Training/Scala_Exercises/Scala_Exercises/, ...) took 4170.336175ms
+[debug] Load.apply: load took 4183.369761ms
+[debug] Load.apply: resolveProjects took 0.081333ms
+[debug] Load.apply: finalTransforms took 5.114773ms
+[debug] Load.apply: config.delegates took 0.307437ms
+[debug] Load.apply: Def.make(settings)... took 47.305684ms
+[debug] Load.apply: structureIndex took 17.599238ms
+[debug] Load.apply: mkStreams took 0.003276ms
+[info] set current project to Scala_Exercises (in build file:/home/elvis/Documents/Scala_Training/Scala_Exercises/Scala_Exercises/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///home/elvis/.sbt/1.0/server/024f11a09db428216443/sock
+[debug] Writing bsp connection file
+[info] started sbt server
