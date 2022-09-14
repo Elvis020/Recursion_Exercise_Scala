@@ -9,7 +9,7 @@
 scala sbt
 ```
 
-## Run tests
+## Run test
 
 ```sh
 sbt test
