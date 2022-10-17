@@ -1,4 +1,3 @@
-[warn] scala-library-2.13.8-javadoc.jar no longer exists at /home/elvis/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8-javadoc.jar
-[debug] not up to date. inChanged = false, force = false
-[debug] Updating ProjectRef(uri("file:/home/elvis/Documents/Scala_Training/Scala_Exercises/Scala_Exercises/"), "root")...
-[debug] Done updating ProjectRef(uri("file:/home/elvis/Documents/Scala_Training/Scala_Exercises/Scala_Exercises/"), "root")
+[debug] not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/home/el/Documents/Scala_Training/Scala_Masterclass_Exercises/Scala_Exercises/"), "root")...
+[debug] Done updating ProjectRef(uri("file:/home/el/Documents/Scala_Training/Scala_Masterclass_Exercises/Scala_Exercises/"), "root")

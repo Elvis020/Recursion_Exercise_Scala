@@ -52,7 +52,7 @@ class WeAreWarmTest extends FunSuite {
   test("Should return all the files with regex './.bsp' using implementation II") {
     val extract = fileMatcher.filesStartingWithCurried("./.")
     val obtained = fileMatcher.toString(extract)
-    val expected = "[./.idea,./.bsp]"
+    val expected = "[./.bsp,./.idea]"
     assertEquals(obtained,expected)
   }
 
